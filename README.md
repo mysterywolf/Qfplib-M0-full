@@ -1,8 +1,6 @@
-# Qfplib-M0-full: 
+# Qfplib-M0-full for RT-Thread
 
 ## A free, fast and compact ARM Cortex-M0 floating-point library
-
-
 
 ## Introduction
 
