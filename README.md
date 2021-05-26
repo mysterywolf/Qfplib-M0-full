@@ -16,6 +16,15 @@ Qfplib-M0-full does not use any static storage. Stack use is parsimonious and st
 
 Qfplib-M0-full is open source, licensed under version 2 of the [GNU GPL](http://www.gnu.org/licenses/). Use at your own risk. If you wish to enquire about alternative licensing please use the e-mail address on the [home page](https://www.quinapalus.com/index.html).
 
+## How to Obtain
+
+```
+ RT-Thread online packages  --->
+    system packages  --->
+        acceleration: Assembly language or algorithmic acceleration packages  --->
+            [*] Qfplib-M0-full: a free, fast and compact ARM Cortex-M0 floating-point library
+```
+
 ## Speed
 
 The following table compares cycle counts for Qfplib-M0-full against other libraries. Qfplib-M0-full and GCC library results are average values for non-exceptional arguments to the functions, include calling overhead, and are approximate. They were measured using an LPC11U68 microcontroller with single-cycle flash memory. Results for the Micro Digital ‘GoFast’ library—presumably optimised for speed rather than size, judging by its name—are inferred from the timings given on [this page](http://www.smxrtos.com/ussw/gofast/gofast_arm_gnu.htm) for an ARM7TDMI-based processor. The comparison here may not be not strictly fair to Qfplib-M0-full as it is not clear from their description whether Micro Digital’s library exploits features available on that processor but not on the Cortex-M0: for example, ARM mode is considerably faster and more flexible than Thumb mode, and the long multiply instructions can be used to advantage in several of the routines, especially in double precision. Micro Digital do not appear to provide public information on the code size of their library. The implementation of the basic functions does not appear to be IEEE 754 compliant with regard to rounding.
